@@ -20,6 +20,14 @@
   font-family: "Gilroy-Medium", Arial, Helvetica, sans-serif;
  }
 
+ figure {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+ }
+
+ /* glob */
+
  .flex {
   display: flex;
  }
@@ -62,6 +70,20 @@
 .btn {
   background: none;
   border: none;
+  transition: color 0.3s ease-in-out,
+              background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: #070707;
+  background-color: #fff;
+}
+
+/* header */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
 }
 
 .header-nav {
@@ -71,6 +93,19 @@
 
 .header-nav-list {
   justify-content: space-between;
+}
+
+.nav-link {
+  display: inline-block;
+  font-weight: 700;
+  color: #828282;
+  transition: color .3s ease-in-out,
+              transform .3s;
+}
+
+.nav-link:hover {
+  color: #070707;
+  transform: scale(1.2);
 }
 
  .hero-top {
@@ -96,6 +131,8 @@
   max-width: 100%;
 }
 
+/* about */
+
 .about-container {
   max-width: 485px;
   flex-direction: column;
@@ -105,6 +142,8 @@
   margin-bottom: 18px;
   text-align: center;
 }
+
+/* skills */
 
 .skills-text {
   margin-bottom: 36px;
@@ -125,9 +164,22 @@
   justify-content: space-between;
 }
 
+.skills-figma-container {
+  width: 90px;
+  height: 90px;
+  justify-content: center;
+  background-color: transparent;
+  transition: background-color .3s ease-in-out;
+}
+
+.skills-figma-container:hover {
+  background-color: #070707;
+}
+
 .skills-pics {
   max-width: 90px;
   background-color: #070707;
+  transition: background-color .3s ease-in-out;
 }
 
 .skills-pics:hover {
@@ -152,6 +204,8 @@
   justify-content: space-between;
 }
 
+/* portfolio */
+
 .portfolio-list-item:not(:last-child) {
   margin-bottom: 100px;
 }
@@ -172,6 +226,8 @@
   text-align: center;
   text-decoration: underline;
 }
+
+/* footer */
 
 .footer-container {
   max-width: 350px;
@@ -205,6 +261,16 @@
 
 .social-link {
   max-width: 40px;
+  fill: #828282;
+  stroke: #828282;
+  transition: fill .3s ease-in-out,
+              stroke .3s ease-in-out;
+}
+
+.social-link:hover {
+  fill: #070707;
+  stroke: #070707;
+
 }
 
 .socials-list-caption {
